@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Buzz Build') {
       steps {
-        sh 'echo $Build'
+        sh 'echo "I am a ${Build}"'
       }
     }
 
   }
   environment {
-    Buzz = 'name'
+    Buzz = 'hljkn'
   }
 }
