@@ -3,9 +3,12 @@ pipeline {
   stages {
     stage('Buzz Build') {
       steps {
-        sh './jenkins/build.sh'
+        sh 'echo $Build'
       }
     }
 
+  }
+  environment {
+    Buzz = 'name'
   }
 }
