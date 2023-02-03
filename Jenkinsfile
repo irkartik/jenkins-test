@@ -3,7 +3,15 @@ pipeline {
   stages {
     stage('Buzz Buzz') {
       steps {
-        echo 'Bees Buzz!'
+        sh 'sleep 5'
+        sh 'echo Success!'
+        sh 'echo Another Placeholder'
+      }
+    }
+
+    stage('Bees bees') {
+      steps {
+        sh 'echo "Hello world"'
       }
     }
 
